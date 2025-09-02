@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Questor Layout</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      background: #f0f2ff;
+      font-family: sans-serif;
+    }
+    .app {
+      width: 375px;
+      background: #f0f2ff;
+    }
+    /* Header */
+    .status-bar {
+      height: 44px;
+    }
+    .header {
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+    }
+    .header .left-icon,
+    .header .right-icons .icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 16px;
+      background: #d1d9ff;
+    }
+    .header .title-placeholder {
+      flex: 1;
+      height: 24px;
+      margin: 0 12px;
+      background: #d1d9ff;
+      border-radius: 12px;
+    }
+    .header .right-icons {
+      display: flex;
+      gap: 8px;
+    }
+    /* Hero Image */
+    .hero {
+      padding: 0 16px;
+    }
+    .hero-image {
+      width: 100%;
+      height: 160px;
+      border-radius: 16px;
+      background: #d8d8d8;
+      position: relative;
+    }
+    .hero-label {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      width: 32px;
+      height: 18px;
+      background: #889cff;
+      border-radius: 9px;
+    }
+    .hero-bubble {
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      right: 8px;
+      height: 44px;
+      background: #ffffff;
+      border-radius: 12px;
+    }
+    /* Tabs */
+    .tabs {
+      display: flex;
+      gap: 8px;
+      padding: 16px;
+    }
+    .tab {
+      flex: 1;
+      height: 32px;
+      background: #d1d9ff;
+      border-radius: 16px;
+    }
+    /* Calendar Card */
+    .calendar-card {
+      margin: 0 16px;
+      padding: 16px;
+      background: #d1d9ff;
+      border-radius: 16px;
+    }
+    .calendar-header {
+      height: 32px;
+      background: #ffffff;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 4px;
+    }
+    .calendar div {
+      height: 28px;
+      background: #ffffff;
+      border-radius: 6px;
+    }
+    /* Todo Card */
+    .todo-card {
+      margin: 16px;
+      padding: 16px;
+      background: #d1d9ff;
+      border-radius: 16px;
+    }
+    .todo-title {
+      height: 32px;
+      background: #ffffff;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+    .todo-item {
+      display: flex;
+      align-items: center;
+    }
+    .todo-check {
+      width: 24px;
+      height: 24px;
+      background: #ffffff;
+      border-radius: 12px;
+      margin-right: 8px;
+    }
+    .todo-bar {
+      flex: 1;
+      height: 32px;
+      background: #ffffff;
+      border-radius: 8px;
+    }
+    .todo-btn {
+      width: 32px;
+      height: 32px;
+      background: #889cff;
+      border-radius: 16px;
+      margin-left: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="status-bar"></div>
+    <div class="header">
+      <div class="left-icon"></div>
+      <div class="title-placeholder"></div>
+      <div class="right-icons">
+        <div class="icon"></div>
+        <div class="icon"></div>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="hero-image">
+        <div class="hero-label"></div>
+        <div class="hero-bubble"></div>
+      </div>
+    </div>
+    <div class="tabs">
+      <div class="tab"></div>
+      <div class="tab"></div>
+      <div class="tab"></div>
+      <div class="tab"></div>
+    </div>
+    <div class="calendar-card">
+      <div class="calendar-header"></div>
+      <div class="calendar">
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      </div>
+    </div>
+    <div class="todo-card">
+      <div class="todo-title"></div>
+      <div class="todo-item">
+        <div class="todo-check"></div>
+        <div class="todo-bar"></div>
+        <div class="todo-btn"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
